@@ -10,6 +10,7 @@ module Sbpayment
       key :pay_method
       key :merchant_id, default: -> { Sbpayment.config.merchant_id }
       key :service_id,  default: -> { Sbpayment.config.service_id }
+      key :hashkey,  default: -> { Sbpayment.config.hashkey }
       key :cust_code
       key :sps_cust_no
       key :sps_payment_no
